@@ -1,9 +1,33 @@
 import './index.css';
 import logo from './assets/logo.svg';
 import heroIMG from './assets/heroIMG.png';
-import JonathanIMG from './assets/JonathanIMG.png';
 import ProfileCard from './components/ProfileCard';
 import React, { useState, useRef } from 'react';
+
+// import dos mentores
+import AndreFortuna from './assets/André_Fortuna.jpeg';
+import AndreNahas from './assets/André_Nahas.jpg';
+import CamilaGiuberti from './assets/Camila_Giuberti_de_Souza.jpg'
+import DanielLopes from './assets/Daniel_Lopes.jpg'
+import FabricioN from './assets/Fabricio_N..jpeg'
+import FelipeRamaldades from './assets/Felipe_Ramaldes_Corrêa.jpg'
+import FernandaCesar from './assets/Fernanda_César_Alves.jpg'
+import FlavioGoncales from './assets/Flavio_Gonçalves_Maciel_de_Figueiredo.jpg'
+import FredericoComerio from './assets/Frederico_Comério.jpg'
+import GabrielBylaardt from './assets/Gabriel_Bylaardt_Meira_Rodrigues.jpg'
+import GustavoLima from './assets/Gustavo_Lima_Corrêa.jpg'
+import IsaacWalker from './assets/Isaac_Walker_de_Abreu.jpg'
+import LeandroCarlos from './assets/Leandro_Carlos_Santos.jpg'
+import LuanaBontempo from './assets/Luana_Bontempo.jpg'
+import MarciaAndrade from './assets/Marcia_Andrade.jpg'
+import MurilloVasconcelos from './assets/Murillo_Vasconcelos_Henriques.jpg'
+import PollyanaRocha from './assets/Pollyanna_Rocha_Vila_Nova.jpg'
+import ReneFerreira from './assets/Rene_Ferreira_de_Oliveira_Neto.jpg'
+import RogerioAraujo from './assets/Rogério_Araujo.jpeg'
+import SamilaSantana from './assets/Samila_Santana.jpeg'
+import ThaisTebaldi from './assets/Thais_Tebaldi_Caser.jpg'
+import VaniaGoulart from './assets/Vânia_Goulart.jpg'
+
 
 export default function App() {
   const [selectedArea, setSelectedArea] = useState("");
@@ -11,35 +35,132 @@ export default function App() {
 
   const mentors = [
     {
-      image: JonathanIMG,
-      name: "Aristóteles",
-      title: "Negócios",
+      image: AndreFortuna,
+      name: "André Fortuna",
+      title: "Negocio - Tecnologia",
       linkedinUrl: "https://www.linkedin.com/in/aristoteles"
     },
     {
-      image: JonathanIMG,
-      name: "Sofia",
-      title: "Tecnologia",
-      linkedinUrl: "https://www.linkedin.com/in/sofia"
-    },
-    {
-      image: JonathanIMG,
-      name: "Carlos",
+      image: AndreNahas,
+      name: "André Nahas",
       title: "Empreendedorismo",
-      linkedinUrl: "https://www.linkedin.com/in/carlos"
+      linkedinUrl: "https://www.linkedin.com/in/andrenahas/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=br"
+
     },
     {
-      image: JonathanIMG,
-      name: "Fernanda",
+      image: CamilaGiuberti,
+      name: "Camila Giuberti",
+      title: "Farmácia",
+      linkedinUrl: "https://www.linkedin.com/in/camilagiuberti/"
+    },
+    {
+      image: DanielLopes,
+      name: "Daniel Lopes",
+      title: "Negocio - Tecnologia",
+      linkedinUrl: "https://www.linkedin.com/in/almeidalopes/"
+    },
+    {
+      image: FabricioN,
+      name: "Fabricio Norbim",
       title: "Mercado Financeiro",
-      linkedinUrl: "https://www.linkedin.com/in/fernanda"
+      linkedinUrl: "https://www.linkedin.com/in/fabricionorbim/"
     },
     {
-      image: JonathanIMG,
-      name: "Lucas",
+      image: FelipeRamaldades,
+      name: "Felipe Ramaldes Corrêa",
+      title: "Consultoria",
+      linkedinUrl: "https://www.linkedin.com/in/felipe-ramaldes-corr%C3%AAa-783315129/"
+    },
+    {
+      image: FernandaCesar,
+      name: "Fernanda César Alves",
+      title: "Consultoria",
+      linkedinUrl: "https://www.linkedin.com/in/fernanda-cesar/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=br"
+    },
+    {
+      image: FlavioGoncales,
+      name: "Flavio Gonçalves",
+      title: "Mercado Financeiro",
+      linkedinUrl: "https://www.linkedin.com/in/fl%C3%A1vio-figueiredo-04263250/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=br"
+    },
+    {
+      image: FredericoComerio,
+      name: "Frederico Comério",
+      title: "Negócios - Tecnologia",
+      linkedinUrl: "https://www.linkedin.com/in/frederico-comerio/"
+    },
+    {
+      image: GabrielBylaardt,
+      name: "Gabriel Bylaardt",
+      title: "Mercado Financeiro",
+      linkedinUrl: "https://www.linkedin.com/in/gbmeira/" 
+    },
+    {
+      image: GustavoLima,
+      name: "Gustavo Lima",
+      title: "Mercado Financeiro",
+      linkedinUrl: "https://open.substack.com/pub/gustavolcorrea/p/pequenas-mudancas-grandes-impactos?r=2nkoa0&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true" 
+    },
+    {
+      image: IsaacWalker,
+      name: "Isaac Walker",
+      title: "Medicina",
+      linkedinUrl: "https://www.linkedin.com/in/isaac-abreu-43841b30/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=br" 
+    },
+    {
+      image: LeandroCarlos,
+      name: "Leandro Carlos",
+      title: "Negócios - Tecnologia",
+      linkedinUrl: "https://www.linkedin.com/in/leandro-carlos-ribeiro-dos-santos/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=br" 
+    },
+    {
+      image: LuanaBontempo,
+      name: "Luana Bontempo e Silva",
+      title: "Tecnologia",
+      linkedinUrl: "https://www.linkedin.com/in/luana-bontempo/" 
+    },
+    {
+      image: MarciaAndrade,
+      name: "Marcia Andrade",
+      title: "Arquitetura",
+      linkedinUrl: "https://www.econodata.com.br/contato/marcia-andrade-paoliello-1ae3d6fe8797ae2e5e3bd6f80d6875c6" 
+    },    
+    {
+      image: PollyanaRocha,
+      name: "Pollyanna Rocha",
       title: "Recursos Humanos",
-      linkedinUrl: "https://www.linkedin.com/in/lucas"
-    }
+      linkedinUrl: "https://www.linkedin.com/in/pollyannavilanovarh/" 
+    },
+    {
+      image: ReneFerreira,
+      name: "Rene Ferreira",
+      title: "Negócios - Operações",
+      linkedinUrl: "https://www.linkedin.com/in/ren%C3%AA-neto-02a035a4/" 
+    },
+    {
+      image: RogerioAraujo,
+      name: "Rogerio Martins",
+      title: "Mercado Financeiro",
+      linkedinUrl: "https://www.linkedin.com/in/rogerio-araujo-52431422/?originalSubdomain=br" 
+    },
+    {
+      image: SamilaSantana,
+      name: "Samila Santana",
+      title: "Medicina",
+      linkedinUrl: "https://www.linkedin.com/in/samila-santana-37297aa9/" 
+    },
+    {
+      image: ThaisTebaldi,
+      name: "Thais Tebaldi",
+      title: "Recursos Humanos",
+      linkedinUrl: "https://www.linkedin.com/in/andrefortuna/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=br" 
+    },
+    {
+      image: VaniaGoulart,
+      name: "Vânia Goulart",
+      title: "Recursos Humanos",
+      linkedinUrl: "https://www.linkedin.com/in/vaniagoulart/" 
+    },
   ];
 
   const filteredMentors = selectedArea
